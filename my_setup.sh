@@ -16,8 +16,8 @@ sudo apt install git curl vim zsh vlc deluge qbittorrent blender htop neofetch k
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Nord theme gnome terminal
-git clone https://github.com/arcticicestudio/nord-gnome-terminal.git
-cd nord-gnome-terminal/src/ && ./nord.sh
+cd ~/Downloads/ && git clone https://github.com/arcticicestudio/nord-gnome-terminal.git
+cd nord-gnome-terminal/src/ && ./nord.sh && cd ../../ && rm -rf nord-gnome-terminal && cd
 
 # SSH
 ssh-keygen -f ~/.ssh/id_rsa -t rsa -N '' -C $my_email
