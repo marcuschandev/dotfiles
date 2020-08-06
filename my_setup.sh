@@ -10,7 +10,7 @@ sudo apt upgrade -y
 sudo apt autoremove -y
 
 # Install packages
-sudo apt install git curl vim zsh vlc deluge qbittorrent blender htop neofetch krita nmap gnome-tweaks fonts-firacode chrome-gnome-shell dconf-editor -y
+sudo apt install git curl vim zsh vlc deluge qbittorrent blender htop neofetch krita nmap gnome-tweaks fonts-firacode chrome-gnome-shell dconf-editor gimp -y
 
 # Vundle (Vim)
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
