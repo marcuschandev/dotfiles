@@ -1,0 +1,6 @@
+#!/bin/bash
+
+scrot /tmp/my_lock.png
+convert /tmp/my_lock.png -blur 0x5 /tmp/my_lock_blur.png
+i3lock -i /tmp/my_lock_blur.png
+rm /tmp/my_lock.png /tmp/my_lock_blur.png
