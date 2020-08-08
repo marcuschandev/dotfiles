@@ -10,7 +10,12 @@ sudo apt upgrade -y
 sudo apt autoremove -y
 
 # Install packages
-sudo apt install git curl vim zsh vlc deluge qbittorrent blender htop neofetch krita nmap gnome-tweaks fonts-firacode chrome-gnome-shell dconf-editor gimp tmux -y
+sudo apt install git curl vim zsh vlc deluge qbittorrent blender htop neofetch krita nmap gnome-tweaks fonts-firacode chrome-gnome-shell dconf-editor gimp tmux pidgin -y
+
+# Oh My Zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # Vundle (Vim)
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
