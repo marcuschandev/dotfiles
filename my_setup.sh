@@ -10,7 +10,7 @@ sudo apt upgrade -y
 sudo apt autoremove -y
 
 # Install packages
-sudo apt install git curl vim zsh vlc deluge qbittorrent blender htop neofetch krita nmap gnome-tweaks fonts-firacode chrome-gnome-shell dconf-editor gimp tmux pidgin -y
+sudo apt install git curl vim zsh vlc deluge qbittorrent blender htop neofetch krita nmap gnome-tweaks fonts-firacode chrome-gnome-shell dconf-editor gimp tmux pidgin i3lock -y
 
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
