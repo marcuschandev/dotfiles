@@ -12,17 +12,18 @@ sudo apt autoremove -y
 # Install packages
 sudo apt install git curl vim zsh vlc deluge qbittorrent blender htop neofetch krita nmap gnome-tweaks fonts-firacode chrome-gnome-shell dconf-editor gimp tmux pidgin i3lock scrot imagemagick xautolock -y
 
-# Oh My Zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
 # Vundle (Vim)
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Nord theme gnome terminal
 cd ~/Downloads/ && git clone https://github.com/arcticicestudio/nord-gnome-terminal.git
-cd nord-gnome-terminal/src/ && ./nord.sh && cd ../../ && rm -rf nord-gnome-terminal && cd
+cd nord-gnome-terminal/src/ && ./nord.sh && cd ../../ && rm -rf nord-gnome-terminal/ && cd
+
+# Fonts
+cd ~/Downloads/ && git clone https://github.com/powerline/fonts.git
+cd fonts/ && ./install.sh && cd ../ && rm -rf fonts/
+
+git clone https://github.com/ryanoasis/nerd-fonts.git && cd nerd-fonts/ && ./install.sh && cd ../ && rm -rf nerd-fonts/ && cd
 
 # SSH
 ssh-keygen -f ~/.ssh/id_rsa -t rsa -N '' -C $my_email
